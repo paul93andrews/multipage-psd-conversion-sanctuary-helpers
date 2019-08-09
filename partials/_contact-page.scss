@@ -1,0 +1,68 @@
+// header styles
+header.contact {
+    background: url(../styles/images/contact-image.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+// main styles
+main.main-contact {
+    background: $primaryLight;
+    padding-bottom: 4rem;
+    div.wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        form {
+            flex-basis: 68%;
+        }
+    }
+}
+
+
+// form styling
+.contact-form {
+    background: white;
+    padding: 3rem;
+    position: relative;
+    top: -4rem;
+    box-shadow: 30px 30px 0px -10px $primaryBright;
+    fieldset {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.contact-form textarea {
+    margin-bottom: 2.5rem;
+}
+
+// aside styling
+main.main-contact aside {
+    @include flex-center;
+    flex-direction: column;
+    flex-basis: 23%;
+}
+
+aside a {
+    color: black;
+}
+
+aside ul.online-directory {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+        li.social-icon {
+            flex-basis: 20%;
+            margin-bottom: .5rem;
+            a {
+                color: $buttonColor;
+            }
+        }
+}
+
+aside ul.online-directory li:not(.social-icon) {
+    flex-basis: 100%;
+}

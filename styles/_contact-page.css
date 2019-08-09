@@ -1,0 +1,6 @@
+header.contact {
+  background: url(../styles/images/contact-image.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }

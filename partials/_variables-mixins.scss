@@ -1,0 +1,30 @@
+//primary colours
+$primaryBright: #f8fb05;
+$primaryLight: #e0fddf;
+
+//secondary colours
+$buttonColor: #065635;
+
+//mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin general-button-style {
+    background: $buttonColor;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Kumar One', cursive;
+    letter-spacing: .05rem;
+    line-height: 1.6rem;
+    border: none;
+}
+
+
+@mixin media($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}

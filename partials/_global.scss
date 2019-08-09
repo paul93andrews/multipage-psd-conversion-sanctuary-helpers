@@ -1,0 +1,129 @@
+html {
+    font-size: 120%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Kumar One Outline', cursive;
+    line-height: 3.4rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h2
+{
+    font-size: 1.56rem;
+    font-family: 'Kumar One', cursive;
+    letter-spacing: .1rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-family: 'Kumar One', cursive;
+    letter-spacing: .1rem;
+    line-height: 2.3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p,
+li,
+input::placeholder {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6rem;
+    letter-spacing: .125rem;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, 
+h2, 
+h3, 
+p, 
+ul, 
+li { 
+    margin: 0; 
+    padding:0;
+}
+
+.max-container {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1500px;
+}
+
+// global header styles
+header {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+        nav {
+            padding-top: 1.5rem;
+        }
+}
+
+header.blog,
+header.contact {
+    height: 70vh;
+}
+
+ul.header-directory {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;
+        a {
+            padding: .5rem;
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+        }
+}
+
+// header styles on blog and location pages
+nav.link-page {
+    display: flex;
+    justify-content: space-between;
+        div.nav-text {
+            flex-basis: 20%;
+            h3 {
+                font-size: 1.2rem;
+                letter-spacing: .125rem;
+                line-height: 1.25rem;
+            }
+        }
+}
+
+div.new-intro {
+    height: 50%;
+    display: flex;
+    align-items: center;
+        h1 {
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+}
+
+.general-button {
+    font-family: 'Kumar One', cursive;
+}

@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: column;
+        fieldset {
+            display: flex;
+            border: none;
+            justify-content: space-between;
+            padding: 0 0 1.5rem 0;
+                input[type="text"] {
+                    flex-basis: 45%;
+                    padding: .5rem;
+                    padding-bottom: 1.5rem;
+                    background: transparent;
+                    border: none;
+                    border-bottom: .125rem solid $buttonColor;
+                }
+            }
+        }
+
+input[type="text"],
+textarea {
+    background: transparent;
+}
+
+textarea {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: .125rem solid $buttonColor;
+}
+
+input::placeholder,
+textarea::placeholder {
+    text-transform: uppercase;
+    color: black;
+}
+
+input[type="submit"] {
+    @include general-button-style;
+    padding: .5rem 0 .25rem 0;
+}

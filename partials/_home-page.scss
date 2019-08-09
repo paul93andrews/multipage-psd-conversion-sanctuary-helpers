@@ -1,0 +1,186 @@
+header.home {
+    // background-color: #f2f3f7;
+    background-image: 
+    url(../styles/images/header-box.png),
+    url(../styles/images/header-home.jpg);
+    background-position:
+    left 16rem,
+    top center;
+    background-repeat: 
+    no-repeat;
+    background-size: 
+    55%,
+    contain;
+    height: 110vh;
+    nav.wrapper {
+        display: flex;
+        justify-content: flex-end;
+        ul.header-directory {
+            align-self: flex-end;
+        }
+    }
+}
+
+.heading-wrapper {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 1500px;
+}
+
+header.home > div {
+    margin-top: 2.5rem;
+    h1 {
+        width: 30%;
+    }
+}
+
+// main styling
+// about section below
+section.about div.wrapper {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.about-text {
+    flex-basis: 65%;
+    p {
+        margin: 1.75rem 0 1rem 0;
+    }
+}   
+
+div.about-image {
+    flex-basis: 25%;
+    img {
+        box-shadow: -20px 22px 0px 0px $primaryBright;
+    }
+}
+
+div.about-text button {
+    @include general-button-style;
+    padding: .5rem 1.5rem;
+}
+
+// gallery section
+section.gallery {
+    background: $primaryLight;
+    padding: 5rem 0; 
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            flex-basis: 31%;
+        }
+    }
+}
+
+// text-directory section
+section.text-directory div.wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5rem 0 7rem 0;
+    div {
+        flex-basis: 43%;
+        position: relative;
+        h2::before {
+            position: absolute;
+            left: -8%;
+            top: 3%;
+            display: block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+    }
+}
+
+div.top-row {
+    margin-bottom: 3rem;
+}
+
+h2.icon1::before {
+    content: "\f015";
+}
+
+h2.icon2::before {
+    content: "\f0c0";
+}
+
+h2.icon3::before {
+    content: "\f15b";
+}
+h2.icon4::before {
+    content: "\f095";
+}
+
+// gallery directory section
+section.gallery-directory {
+    background: $primaryLight;
+    display: flex;
+    justify-content: space-between;
+    div {
+        flex-basis: 45%;
+        position: relative;
+        h2 {
+            margin-top: 4rem;
+        }
+    }
+}
+
+div.image-info button {
+    margin-bottom: 3rem;
+    @include general-button-style;
+    a {
+        width: 100%;
+        padding: .5rem .75rem;
+    }
+}
+
+section.gallery-directory div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    img {
+        position: relative;
+        top: -2.5rem;
+        box-shadow: 35px 35px 0px -13px $primaryBright;
+    }
+}
+
+section.gallery-directory p {
+    width: 70%;
+    margin: 1rem 0;
+}
+
+section.gallery-directory div:nth-of-type(1) p {
+    text-align: right;
+}
+
+section.gallery-directory div:nth-of-type(2) img {
+    position: relative;
+    bottom: -2.5rem;
+    box-shadow: -35px 35px 0px -13px $primaryBright;
+}
+
+// search section
+section.search {
+    background: url(../styles/images/banner-image.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    div.search-text {
+        padding: 40% 0 8% 0;
+        display: flex;
+        flex-direction: column;
+        @include flex-center;
+        p {
+            width: 90%;
+            margin: .5rem 0 1.2rem 0;
+        }
+    }
+}
+
+section.search button {
+    @include general-button-style;
+    padding: .5rem .75rem;
+}
