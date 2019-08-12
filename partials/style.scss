@@ -1,8 +1,12 @@
 @import "./setup";
-@import "./global";
 @import "./variables-mixins";
+@import "./global";
 @import "./home-page";
 @import "./blog-page.scss";
 @import "./contact-page";
 @import "./forms";
 @import "./footer";
+@import "./selector-states";
+@import "./mobile-nav";
+@import "./mq-home-page";
+@import "./mq-blog-page";

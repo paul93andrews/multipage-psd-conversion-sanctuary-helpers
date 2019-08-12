@@ -1,0 +1,75 @@
+// header navigation links
+header nav a {
+    border-bottom: .5rem solid transparent;
+    transition: border-bottom .5s ease-in-out;
+}
+
+header nav a:hover,
+header nav a:focus {
+    border-bottom: .5rem solid $primaryBright;
+}
+
+// mobile nav links
+.slide-nav a:hover,
+.slide-nav a:focus {
+    border-bottom: .25rem solid $primaryBright;
+}
+
+// buttons
+button.hamburger:hover,
+button.hamburger:focus,
+button.exit-responsive:hover,
+button.exit-responsive:focus {
+    color: $primaryBright;
+    border-radius: 15%;
+}
+
+button.hamburger:focus {
+    background: rgba(189, 185, 185, 0.74);
+}
+
+.general-button,
+input[type="submit"] {
+    transition: box-shadow .4s;
+}
+
+.general-button:hover,
+.general-button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); 
+}
+
+.general-button:active,
+input[type="submit"]:active {
+    transform: scale(.9);
+}
+
+
+// form inputs
+input[type="text"]:focus {
+outline: .5rem solid $buttonColor;
+-webkit-animation: heartbeat 1.5s ease-in-out infinite both;	        animation: heartbeat 1.25s ease-in-out infinite both;
+}
+
+textarea:focus {
+    border: .5rem solid $buttonColor;
+}
+
+// social media icons
+ul.online-directory li:hover,
+ul.online-directory a:focus,
+ul.location-directory a:hover,
+ul.location-directory a:focus {
+    transform: scale(1.3);
+    outline: 0;
+}
+
+ul.online-directory .email-info:focus,
+ul.location-directory a:focus {
+    border-bottom: .25rem solid $buttonColor;
+}
+
+ul.online-directory a:focus i {
+    color: red;
+}

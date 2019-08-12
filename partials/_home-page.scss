@@ -61,6 +61,10 @@ div.about-text button {
     padding: .5rem 1.5rem;
 }
 
+p.mobile-text {
+    display: none;
+}
+
 // gallery section
 section.gallery {
     background: $primaryLight;
@@ -77,19 +81,18 @@ section.gallery {
 // text-directory section
 section.text-directory div.wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 5rem 0 7rem 0;
     div {
-        flex-basis: 43%;
+        flex-basis: 50%;
         position: relative;
-        h2::before {
-            position: absolute;
-            left: -8%;
-            top: 3%;
-            display: block;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        div.directory-text {
+            flex-basis: 87%;
+            flex-direction: column;
         }
     }
 }
@@ -98,19 +101,19 @@ div.top-row {
     margin-bottom: 3rem;
 }
 
-h2.icon1::before {
-    content: "\f015";
+div.directory-info i {
+    font-size: 1.25rem;
+    background: $primaryBright;
+    align-self: flex-start;
+    padding: .65rem;
+    border-radius: 50%;
+    flex-basis: 2%;
+    position: relative;
+    top: -.25rem;
 }
 
-h2.icon2::before {
-    content: "\f0c0";
-}
-
-h2.icon3::before {
-    content: "\f15b";
-}
-h2.icon4::before {
-    content: "\f095";
+div.directory-info .fa-file {
+    padding: .65rem .85rem;
 }
 
 // gallery directory section
@@ -127,13 +130,14 @@ section.gallery-directory {
     }
 }
 
-div.image-info button {
+div.image-info a {
     margin-bottom: 3rem;
     @include general-button-style;
-    a {
-        width: 100%;
-        padding: .5rem .75rem;
+    padding: .6rem .75rem .5rem .75rem;
     }
+
+div.info2 a {
+    display: inline-block;
 }
 
 section.gallery-directory div:nth-of-type(1) {

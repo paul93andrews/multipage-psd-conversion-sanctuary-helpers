@@ -11,6 +11,21 @@
 </head>
 <body>
     <div class="max-container">
+        <a href="#main-blog" class="skip-link">Skip to Main Content.</a>
+        <div class="slide-nav">
+            <ul class="header-directory mobile">
+                <li>
+                    <button class="exit-responsive">
+                        <i class="fas fa-times"></i>
+                        <span class="sr-only">Exit toggle to remove full screen mobile nav</span>
+                    </button>
+                </li>
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="#" class="mobile-link">About</a></li>
+                <li><a href="blog.html" class="mobile-link">Blog</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
         <header class="blog">
             <nav class="link-page wrapper">
                 <div class="nav-text">
@@ -23,6 +38,8 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+
+                <button class="hamburger"><i class="fa fa-bars"></i></button>
             </nav>
 
             <div class="new-intro wrapper">
@@ -30,7 +47,7 @@
             </div>
         </header>
 
-        <main class="main-blog">
+        <main class="main-blog" id="main-blog">
             <div class="medium-container">
                 <article class="new-space">
                     <div class="floating-card">
@@ -109,5 +126,22 @@
             </section>
         </footer>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    
+    <script>
+        $(function () {
+            $('.hamburger, .exit-responsive').click(function () {
+                $('.slide-nav').toggleClass('show');
+            });
+            $('.large-a').click(function () {
+                $('.slide-nav').removeClass('show');
+            });
+
+            $('a').smoothScroll();
+        });
+    </script>
 </body>
 </html>

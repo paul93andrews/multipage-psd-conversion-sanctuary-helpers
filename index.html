@@ -11,6 +11,25 @@
 </head>
 <body>
     <div class="max-container">
+        <a href="#main" class="skip-link">Skip to Main Content.</a>
+        <a href="#gallery" class="skip-link">Skip to Image Gallery.</a>
+        <a href="#directory" class="skip-link">Skip to Directory.</a>
+        <a href="#more-info" class="skip-link">Skip to More Information.</a>
+        <a href="#search" class="skip-link">Skip to Search.</a>
+        <div class="slide-nav">
+            <ul class="header-directory mobile">
+                <li>
+                    <button class="exit-responsive">
+                        <i class="fas fa-times"></i>
+                        <span class="sr-only">Exit toggle to remove full screen mobile nav</span>
+                    </button>
+                </li>
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="#" class="mobile-link">About</a></li>
+                <li><a href="blog.html" class="mobile-link">Blog</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
         <header class="home">
             <nav class="wrapper">
                 <ul class="header-directory">
@@ -19,6 +38,7 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <button class="hamburger"><i class="fa fa-bars"></i></button>
             </nav>
 
             <div class="intro-text heading-wrapper">
@@ -26,12 +46,13 @@
             </div>
         </header>
 
-        <main>
+        <main id="main">
             <section class="about">
                 <div class="wrapper">
                     <div class="about-text">
                         <h2>Discovering New Materials</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iure cum eos assumenda quis cumque vero consectetur magni, harum corporis consequatur nisi deleniti quam, explicabo accusamus qui dolor error architecto veniam est odit et nobis laboriosam. Iusto iure sunt quidem. Labore tempora perspiciatis ab molestiae necessitatibus at. Aliquam, delectus libero.</p>
+                        <p class="mobile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, molestiae?</p>
                         <button class="general-button">Find out more</button>
                     </div>
         
@@ -41,7 +62,7 @@
                 </div>
             </section>
     
-            <section class="gallery">
+            <section class="gallery" id="gallery">
                 <div class="wrapper">
                     <ul>
                         <li><img src="styles/images/gallery-image-1.jpg" alt="A green cabinet topped with decorative pieces infront of a white brick wall"></li>
@@ -51,50 +72,60 @@
                 </div>
             </section>
     
-            <section class="text-directory">
+            <section class="text-directory" id="directory">
                 <div class="wrapper">
-                    <div class="directory-text top-row">
-                        <h2 class="icon icon1">Customized Offers</h2>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                    <div class="directory-info top-row">
+                        <i class="fas fa-home"></i>
+                        <div class="directory-text"> 
+                            <h2 class="icon icon1">Customized Offers</h2>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                        </div>
                     </div>
-                    <div class="directory-text top-row">
-                        <h2 class="icon icon2">Community</h2>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                    <div class="directory-info top-row">
+                        <i class="fas fa-users"></i>
+                        <div class="directory-text">
+                            <h2 class="icon icon2">Community</h2>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                        </div>
                     </div>
-                    <div class="directory-text">
-                        <h2 class="icon icon3">Blog</h2>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                    <div class="directory-info">
+                        <i class="fas fa-file"></i>
+                        <div class="directory-text">
+                            <h2 class="icon icon3">Blog</h2>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                        </div>
                     </div>
-                    <div class="directory-text">
-                        <h2 class="icon icon4">Get in touch</h2>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                    <div class="directory-info">
+                        <i class="fas fa-phone"></i>
+                        <div class="directory-text">
+                            <h2 class="icon icon4">Get in touch</h2>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
+                        </div>
                     </div>
                 </div>
             </section>
     
-            <section class="gallery-directory">
-                <div class="image-info info1">
+            <section class="gallery-directory" id="more-info">
+                <div class="image-info info1 mobile-wrapper">
                     <img src="styles/images/left-image.jpg" alt="Three modern and white chairs surronding a table with a plant resting on it">
                     <h2>New Locations</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repudiandae commodi illo eos eligendi. Id explicabo nesciunt reprehenderit natus fac</p>
-                    <button><a href="#" class="general-button">Read More</a></button>
+                    <a href="contact.html" class="general-button">Read More</a>
                 </div>
-                <div class="image-info info2">
+                <div class="image-info info2 mobile-wrapper">
                     <h2>Group Programs</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repudiandae commodi illo eos eligendi. Id explicabo
                     nesciunt reprehenderit natus fac</p>
-                    <button><a href="#" class="general-button">Read More</a></button>
+                    <a href="blog.html" class="general-button">Read More</a>
                     <img src="styles/images/right-image.jpg" alt="Two modern straw patio chairs outside infront of a white and blue styled home">
                 </div>
             </section>
     
-            <section class="search">
-                <!-- <div class="section-banner">
-                    <img src="styles/images/banner-image.jpg" alt="">
-                </div> -->
+            <section class="search" id="search">
                 <div class="search-text wrapper">
                     <h2>Search by style</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur labore nostrum autem cum blanditiis laboriosam unde sint molestiae deserunt. Ipsam reprehenderit animi unde incidunt id porro exercitationem vitae. Soluta fuga voluptatum inventore hic pariatur animi aliquid porro, cumque illum quaerat nesciunt, deserunt quasi nemo alias?</p>
+                    <p class="mobile-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, veniam.</p>
                     <button class="general-button">Find out more</button>
                 </div>
             </section>
@@ -106,5 +137,22 @@
             </section>
         </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    
+    <script>
+        $(function () {
+            $('.hamburger, .exit-responsive').click(function () {
+                $('.slide-nav').toggleClass('show');
+            });
+            $('.large-a').click(function () {
+                $('.slide-nav').removeClass('show');
+            });
+
+            $('a').smoothScroll();
+        });
+    </script>
 </body>
 </html>
