@@ -10,12 +10,16 @@
     <title>Sanctuary Helpers</title>
 </head>
 <body>
+    <!-- max-container below constrains the width of the website at large displays -->
+    <!-- anything constrained by an element with the class of wrapper is having their width managed on the webpages -->
     <div class="max-container">
+        <!-- screen reader accessibilty links available only through focus states  -->
         <a href="#main" class="skip-link">Skip to Main Content.</a>
         <a href="#gallery" class="skip-link">Skip to Image Gallery.</a>
         <a href="#directory" class="skip-link">Skip to Directory.</a>
         <a href="#more-info" class="skip-link">Skip to More Information.</a>
         <a href="#search" class="skip-link">Skip to Search.</a>
+        <!-- mobile nav -->
         <div class="slide-nav">
             <ul class="header-directory mobile">
                 <li>
@@ -30,6 +34,7 @@
                 <li><a href="contact.html" class="mobile-link">Contact</a></li>
             </ul>
         </div>
+
         <header class="home">
             <nav class="wrapper">
                 <ul class="header-directory">
@@ -40,7 +45,6 @@
                 </ul>
                 <button class="hamburger"><i class="fa fa-bars"></i></button>
             </nav>
-
             <div class="intro-text heading-wrapper">
                 <h1>Sanctuary Helpers</h1>
             </div>
@@ -55,7 +59,6 @@
                         <p class="mobile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, molestiae?</p>
                         <button class="general-button">Find out more</button>
                     </div>
-        
                     <div class="about-image">
                         <img src="styles/images/small-box.jpg" alt="Purple sofa furnished with modern styles in a well decorated and modern room">
                     </div>
@@ -138,6 +141,7 @@
         </footer>
     </div>
 
+    <!-- simple JavaScript below to make the hamburger menu and slide nav more functional and to enable smooth scrolling throughout entire website -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>

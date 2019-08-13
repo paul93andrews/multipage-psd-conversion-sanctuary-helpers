@@ -10,8 +10,12 @@
     <title>Sanctuary Helpers Blog</title>
 </head>
 <body>
+    <!-- max-container below constrains the width of the website at large displays -->
+    <!-- anything constrained by an element with the class of wrapper is having their width managed on the webpages -->
     <div class="max-container">
+        <!-- screen reader accessibilty links available only through focus states  -->
         <a href="#main-contact" class="skip-link">Skip to Main Content.</a>
+        <!-- mobile nav -->
         <div class="slide-nav">
             <ul class="header-directory mobile">
                 <li>
@@ -26,22 +30,20 @@
                 <li><a href="contact.html" class="mobile-link">Contact</a></li>
             </ul>
         </div>
+
         <header class="contact">
             <nav class="link-page wrapper">
                 <div class="nav-text">
                     <h3>Sanctuary Helpers</h3>
                 </div>
-        
                 <ul class="header-directory">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-
                 <button class="hamburger"><i class="fa fa-bars"></i></button>
             </nav>
-        
             <div class="new-intro wrapper">
                 <h1>Get in touch</h1>
             </div>
@@ -49,6 +51,7 @@
 
         <main class="main-contact" id="main-contact">
             <div class="wrapper">
+                <!-- form for contact information with white background and yellow box shadow -->
                 <form action="" method="POST" name="contact-form" class="contact-form">
                     <fieldset>
                         <label for="name" class="visually-hidden">Name</label>
@@ -83,7 +86,6 @@
                             <a href="#" class="email-info">info@email.com</a>
                         </li>
                     </ul>
-
                     <ul class="location-directory">
                         <li><a href="#">123 - 456 - 7890</a></li>
                         <li>123 Queen Street West, Unit 10</li>
@@ -100,7 +102,7 @@
             </section>
         </footer>
     </div>
-
+    <!-- simple JavaScript below to make the hamburger menu and slide nav more functional and to enable smooth scrolling throughout entire website -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>

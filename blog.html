@@ -10,8 +10,12 @@
     <title>Sanctuary Helpers Blog</title>
 </head>
 <body>
+    <!-- max-container below constrains the width of the website at large displays -->
+    <!-- anything constrained by an element with the class of wrapper is having their width managed on the webpages -->
     <div class="max-container">
+        <!-- screen reader accessibilty links available only through focus states  -->
         <a href="#main-blog" class="skip-link">Skip to Main Content.</a>
+        <!-- mobile nav -->
         <div class="slide-nav">
             <ul class="header-directory mobile">
                 <li>
@@ -26,30 +30,30 @@
                 <li><a href="contact.html" class="mobile-link">Contact</a></li>
             </ul>
         </div>
+
         <header class="blog">
             <nav class="link-page wrapper">
                 <div class="nav-text">
                     <h3>Sanctuary Helpers</h3>
                 </div>
-    
                 <ul class="header-directory">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-
                 <button class="hamburger"><i class="fa fa-bars"></i></button>
             </nav>
-
             <div class="new-intro wrapper">
                 <h1>Blog</h1>
             </div>
         </header>
 
         <main class="main-blog" id="main-blog">
+            <!-- medium container constrains elements within it by a different width than wrapper found on other areas of website -->
             <div class="medium-container">
                 <article class="new-space">
+                    <!-- floating card is the blog post article that floats into the header -->
                     <div class="floating-card">
                         <div class="floating-img">
                             <img src="styles/images/blog-post-image.jpg" alt="Blue bed frame with white linen bed sheets over mattress in a colourful room">
@@ -63,7 +67,6 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vol</p>
                         </div>
                     </div>
-    
                     <div class="comments article-wrapper">
                         <h3>Comments:</h3>
                         <div class="comment-info">
@@ -79,7 +82,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- form for leaving comments on associated blog post -->
                     <form action="" method="POST" name="comment-form" class="article-wrapper comment-form">
                         <fieldset>
                             <label for="name" class="visually-hidden">Name</label>
@@ -99,13 +102,11 @@
                     <div class="aside-image">
                         <img src="styles/images/sidebar-image.jpg" alt="Large bronze lighting fixture hanging from white ceiling">
                     </div>
-    
                     <div class="aside-text">
                         <div class="text1">
                             <h2>Our mission</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda</p>
                         </div>
-    
                         <div class="text2">
                             <h2>Recent posts</h2>
                             <ul>
@@ -126,7 +127,7 @@
             </section>
         </footer>
     </main>
-
+    <!-- simple JavaScript below to make the hamburger menu and slide nav more functional and to enable smooth scrolling throughout entire website -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
