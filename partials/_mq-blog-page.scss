@@ -1,24 +1,24 @@
 @include media (1050px) {
     div.medium-container {
         flex-direction: column;
-        aside {
-            order: -1;
-            width: 60%;
-            margin: 0 auto;
-            top: -5rem;
-            margin-bottom: 7rem;
-            img {
-                width: 70%;
-            }
+            aside {
+                order: -1;
+                width: 60%;
+                margin: 0 auto;
+                top: -5rem;
+                margin-bottom: 7rem;
+                    img {
+                        width: 70%;
+                }
         }
     }
 
     div.medium-container article {
         width: 80%;
         margin: 0 auto;
-        div.comments,
-        form {
-            margin-left: 0;
+            div.comments,
+            form {
+                margin-left: 0;
         }
     }
 }
@@ -31,16 +31,16 @@
 
 @include media (650px) {
     div.medium-container article,
-    div.medium-container aside {
-    width: 90%;
+    div.medium-container aside,
+    div.floating-card div.text {
+        width: 90%;
     }
 
     div.floating-card div.text {
         margin: 0 auto;
-        width: 90%;
-        h2,
-        p.date {
-            text-align: center;
+            h2,
+            p.date {
+                text-align: center;
         }
     }
 }
@@ -52,14 +52,14 @@
 
     div.comment-text {
         flex-basis: 100%;
-        p {
-            font-size: .85rem;
-            margin-left: 0;
-            display: block;
-            width: 100%;
-            &:first-of-type {
-                margin-top: 7.5rem;
-            }
+            p {
+                font-size: .85rem;
+                margin-left: 0;
+                display: block;
+                width: 100%;
+                &:first-of-type {
+                    margin-top: 7.5rem;
+                }
         }
     }
 

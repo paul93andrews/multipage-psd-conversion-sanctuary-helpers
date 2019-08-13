@@ -14,8 +14,8 @@ form {
                     border: none;
                     border-bottom: .125rem solid $buttonColor;
                 }
-            }
         }
+}
 
 input[type="text"],
 textarea {
@@ -42,11 +42,11 @@ input[type="submit"] {
 @include media (650px) {
     form fieldset {
         flex-wrap: wrap;
-        input[type="text"] {
-            flex-basis: 100%;
-            &:first-of-type {
-                margin-bottom: 1rem;
+            input[type="text"] {
+                flex-basis: 100%;
+                    &:first-of-type {
+                        margin-bottom: 1rem;
+                    }
             }
-        }
     }
 }

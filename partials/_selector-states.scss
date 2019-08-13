@@ -45,11 +45,9 @@ input[type="submit"]:active {
     transform: scale(.9);
 }
 
-
 // form inputs
 input[type="text"]:focus {
-outline: .5rem solid $buttonColor;
--webkit-animation: heartbeat 1.5s ease-in-out infinite both;	        animation: heartbeat 1.25s ease-in-out infinite both;
+    outline: .5rem solid $buttonColor;
 }
 
 textarea:focus {

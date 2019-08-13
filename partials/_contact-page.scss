@@ -11,14 +11,14 @@ header.contact {
 main.main-contact {
     background: $primaryLight;
     padding-bottom: 4rem;
-    div.wrapper {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        form {
-            flex-basis: 68%;
-        }
-    }
+        div.wrapper {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+                form {
+                    flex-basis: 68%;
+                }
+        }   
 }
 
 
@@ -29,9 +29,9 @@ main.main-contact {
     position: relative;
     top: -4rem;
     box-shadow: 30px 30px 0px -10px $primaryBright;
-    fieldset {
-        padding-bottom: 2.5rem;
-    }
+        fieldset {
+            padding-bottom: 2.5rem;
+        }
 }
 
 .contact-form textarea {
@@ -57,9 +57,9 @@ aside ul.online-directory {
         li.social-icon {
             flex-basis: 20%;
             margin-bottom: .5rem;
-            a {
-                color: $buttonColor;
-            }
+                a {
+                    color: $buttonColor;
+                }
         }
 }
 

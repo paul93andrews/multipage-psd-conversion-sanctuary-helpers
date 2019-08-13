@@ -11,33 +11,23 @@ div.slide-nav,
 		width: 100%;
 		height: 50vh;
 		top: 0;
-		transition: all 0.4s; /* magic to animate it */
+		transition: all 0.4s; 
 		background: $primaryLight;
-		z-index: 3;
-		ul {
-			flex-direction: column;
-			align-items: center;
-			padding-top: 2rem;
-			a {
-				border-bottom: .25rem solid black;
-				padding: .5rem;
-				margin-top: 1rem;
+		z-index: 10;
+			ul {
+				flex-direction: column;
+				align-items: center;
+				padding-top: 2rem;
+					a {
+						border-bottom: .25rem solid black;
+						padding: .5rem;
+						margin-top: 1rem;
+					}
 			}
-		}
 	}
 
-	
 	div.slide-nav.show {
 		visibility: visible;
-	}
-	
-	input[type="checkbox"]:checked + div {
-		visibility: visible;
-	}
-	
-	label[for="toggle"] {
-		z-index: 11;
-		position: fixed;
 	}
 	
 	.hamburger,
@@ -48,11 +38,13 @@ div.slide-nav,
 		border: none;
 		color: $buttonColor;
 		cursor: pointer;
-		}
-		
-	
-	// put an active state on mobile nav 
-	
+	}
+
+	.hamburger {
+		position: fixed;
+		z-index: 9;
+	}
+			
 	input[type="checkbox"] {
 		display: none;
 	}
