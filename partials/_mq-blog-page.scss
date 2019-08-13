@@ -1,0 +1,70 @@
+@include media (1050px) {
+    div.medium-container {
+        flex-direction: column;
+        aside {
+            order: -1;
+            width: 60%;
+            margin: 0 auto;
+            top: -5rem;
+            margin-bottom: 7rem;
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    div.medium-container article {
+        width: 80%;
+        margin: 0 auto;
+        div.comments,
+        form {
+            margin-left: 0;
+        }
+    }
+}
+
+@include media (750px) {
+    nav.link-page div.nav-text h3 {
+        font-size: 1rem;
+    }
+}
+
+@include media (650px) {
+    div.medium-container article,
+    div.medium-container aside {
+    width: 90%;
+    }
+
+    div.floating-card div.text {
+        margin: 0 auto;
+        width: 90%;
+        h2,
+        p.date {
+            text-align: center;
+        }
+    }
+}
+
+@include media (450px) {
+    div.new-intro h1 {
+        align-self: flex-end;
+    }
+
+    div.comment-text {
+        flex-basis: 100%;
+        p {
+            font-size: .85rem;
+            margin-left: 0;
+            display: block;
+            width: 100%;
+            &:first-of-type {
+                margin-top: 7.5rem;
+            }
+        }
+    }
+
+    div.comment-text::before {
+        top: 5%;
+        left: 35%;
+    }
+}

@@ -38,3 +38,15 @@ input[type="submit"] {
     @include general-button-style;
     padding: .5rem 0 .25rem 0;
 }
+
+@include media (650px) {
+    form fieldset {
+        flex-wrap: wrap;
+        input[type="text"] {
+            flex-basis: 100%;
+            &:first-of-type {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

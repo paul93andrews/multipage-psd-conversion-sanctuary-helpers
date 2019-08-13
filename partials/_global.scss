@@ -66,7 +66,8 @@ input::placeholder {
 }
 
 @include media (350px) {
-    h1 {
+    header.home h1,
+    header.blog h1 {
         font-size: 2rem;
     }
 }
@@ -169,4 +170,31 @@ div.new-intro {
 
 .general-button {
     font-family: 'Kumar One', cursive;
+}
+
+@include media (750px) {
+    nav.link-page {
+        flex-wrap: wrap;
+        div.nav-text h3 {
+            font-size: 1rem;
+        }
+    }
+
+    nav.link-page ul.header-directory a{
+        font-size: .85rem;
+    }
+}
+
+@include media (650px) {
+    nav.link-page ul.header-directory {
+        flex-basis: 100%;
+        margin-top: .5rem;
+    }
+}
+
+@include media (450px) {
+    header.blog,
+    header.contact {
+        height: 90vh;
+    }
 }

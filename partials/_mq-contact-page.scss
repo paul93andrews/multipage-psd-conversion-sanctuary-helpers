@@ -1,0 +1,55 @@
+@include media (1050px) {
+    main.main-contact div.wrapper {
+        flex-wrap: wrap;
+        form {
+            flex-basis: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    main.main-contact aside {
+        flex-basis: 50%;
+        margin: 0 auto;
+        align-items: center;
+        ul.online-directory {
+            align-self: inherit;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            li.social-icon {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    main.main-contact aside ul.location-directory {
+        text-align: center;
+    }
+}
+
+@include media (650px) {
+    main.main-contact aside {
+        flex-basis: 75%;
+        ul.online-directory {
+            width: 95%;
+        }
+    }
+
+    main.main-contact div.wrapper form {
+        padding: 1rem;
+    }
+}
+
+@include media (450px) {
+    header.contact {
+        background-position: 60% 50%;
+    }
+
+    main.main-contact div.wrapper {
+        flex-direction: column;
+        form {
+            width: 90%;
+            padding: 1rem;
+        }
+    }
+}
