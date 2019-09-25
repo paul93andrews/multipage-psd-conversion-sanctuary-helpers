@@ -17,10 +17,16 @@
     }
 }
 
+@include media (1500px) {
+    header.home {
+        height: 100vh;
+    }
+}
+
 
 @include media (1250px) {
     header.home {
-        height: 95vh;
+        height: 100vh;
     }
 
     div.directory-text {
@@ -30,7 +36,7 @@
 
 @include media (1050px) {
     header.home {
-        height: 90vh;
+        height: 95vh;
     }
 
     div.about-image {
@@ -44,7 +50,7 @@
 
 @include media (950px) {
     header.home {
-        height: 83vh;
+        height: 85vh;
     }
 
     section.about div.wrapper {
