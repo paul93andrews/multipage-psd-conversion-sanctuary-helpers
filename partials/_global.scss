@@ -122,6 +122,10 @@ li {
     left: 50%;
 }
 
+.noScroll {
+    overflow-y: hidden;
+}
+
 // global header styles
 header {
     height: 90vh;

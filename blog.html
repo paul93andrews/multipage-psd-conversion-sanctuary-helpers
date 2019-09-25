@@ -138,6 +138,7 @@
         $(function () {
             $('.hamburger, .exit-responsive').click(function () {
                 $('.slide-nav').toggleClass('show');
+                $('body').toggleClass('noScroll');
             });
             $('.large-a').click(function () {
                 $('.slide-nav').removeClass('show');

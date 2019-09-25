@@ -4,13 +4,13 @@ header.home {
     url(../styles/images/header-box.png),
     url(../styles/images/header-home.jpg);
     background-position:
-    left 16rem,
+    left 14rem,
     top center;
     background-repeat: 
     no-repeat;
     background-size: 
-    55%,
-    contain;
+    45%,
+    cover;
     height: 110vh;
         nav.wrapper {
             display: flex;
